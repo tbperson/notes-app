@@ -1,0 +1,183 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1e1e1e;
+    color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(192, 192, 192, 0.1), rgba(128, 128, 128, 0.1), rgba(169, 169, 169, 0.1), rgba(211, 211, 211, 0.1));
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    height: 80%;
+    background-color: rgba(44, 62, 80, 0.2);
+    box-shadow: 0.2vh 0 0.4vh rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.sidebar {
+    width: 30%;
+    height: 100%;
+    background-color: rgba(44, 62, 80, 0.2);
+    color: white;
+    box-shadow: 0.2vh 0 0.4vh rgba(0, 0, 0, 0.2);
+}
+
+.sidebar h1 {
+    margin: 0;
+    font-size: 4vh;
+    padding: 1vh;
+    text-align: center;
+}
+
+.sidebar .input-container {
+    display: flex;
+    align-items: center;
+    height: auto;
+    background-color: rgba(44, 62, 80, 0.4);
+    border-radius: 5vh;
+    padding: 1vh;
+    margin-top: 2vh;
+}
+
+.sidebar input {
+    margin: 8px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 1.6vh;
+    border: none;
+    border-radius: 5vh;
+    outline: none;
+    background-color: #2C2F33;
+    color: #A0A0A0;
+    border: 0.2vh solid #64B5F6;
+}
+
+.sidebar .bar {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(44, 62, 80, 0.3);
+    border-radius: 5px;
+    text-align: left;
+    position: relative;
+    border: 1px solid rgba(30, 30, 30, 0.5);
+}
+
+.sidebar .bar h1 {
+    margin: 0;
+    font-size: 2.5vh;
+    text-align: center;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.sidebar .bar button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 2.5vh;
+    transition: 0.3s;
+    border: 1px solid transparent;
+    height: 50px;
+    width: 50px;
+    margin: 0 10px;
+}
+
+.sidebar .bar button:hover {
+    transform: scale(1.15);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.sidebar .head {
+    width: 100%;
+    height: 80px;
+    background-color: transparent;
+}
+
+.sidebar .content {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    max-height: 100%;
+}
+
+.notes_viewer {
+    width: 70%;
+    height: 100%;
+    background-color: rgba(44, 62, 80, 0.2);
+    color: white;
+    box-shadow: 0.2vh 0 0.4vh rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.notes_viewer .note {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border-radius: 5px;
+    text-align: left;
+    position: relative;
+    border: 1px solid rgba(30, 30, 30, 0.5);
+}
+
+.notes_viewer .note h1 {
+    margin: 0;
+    font-size: 2.5vh;
+    padding: 1vh;
+    text-align: center;
+    width: 80%;
+}
+.note_creator {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.note_creator input,
+.note_creator textarea,
+.note_creator button {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: transparent;
+}
+/* Custom scrollbar styles */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(44, 62, 80, 0.2);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #2C2F33;
+    border-radius: 10px;
+    border: 3px solid rgba(44, 62, 80, 0.2);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #64B5F6;
+}
